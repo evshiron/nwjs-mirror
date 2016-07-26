@@ -1,0 +1,31 @@
+{
+  "name": "nwjs-mirror",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evshiron/nwjs-mirror.git"
+  },
+  "keywords": [
+    "nwjs",
+    "mirror"
+  ],
+  "author": "evshiron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evshiron/nwjs-mirror/issues"
+  },
+  "homepage": "https://github.com/evshiron/nwjs-mirror#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "express": "^4.14.0",
+    "fs-extra": "^0.30.0",
+    "node-async-flow": "^1.3.1",
+    "request": "^2.74.0",
+    "serve-static": "^1.11.1"
+  }
+}
