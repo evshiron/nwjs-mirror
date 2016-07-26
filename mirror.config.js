@@ -9,6 +9,8 @@ module.exports = {
         return !/live-build/.test(url)
         && !/xdk/.test(url)
         && !/symbol/.test(url)
+        && !/alpha/.test(url)
+        && !/beta/.test(url)
         && !/v0\.8/.test(url)
         && !/v0\.9/.test(url)
         && !/v0\.10/.test(url)
