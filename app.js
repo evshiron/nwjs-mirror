@@ -1,4 +1,6 @@
 
+const { writeFile } = require('fs');
+
 const express = require('express');
 const serveStatic = require('serve-static');
 
@@ -14,6 +16,21 @@ app.listen(config.port);
 
 synchronizer.start();
 synchronizer.syncAll((err, results) => {
-    console.error(err);
-    console.log(results);
+
+    if(err) {
+        console.error(err);
+        return;
+    }
+
+    writeFile('./results.json', JSON.stringify(results, 0, 4), (err) => {
+
+        if(err) {
+            console.error(err);
+            return;
+        }
+
+        console.log(results);
+
+    });
+
 });
